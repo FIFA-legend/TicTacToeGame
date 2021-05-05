@@ -1,0 +1,78 @@
+main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    padding: 0 35px;
+    border: 5px solid black;
+}
+
+.container {
+    max-width: 75%;
+}
+
+.username {
+    min-width: 26.5%;
+    float: right;
+    color: blue;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: 'Consolas', monospace;
+    border: 3px solid black;
+    padding: 0 15px;
+    text-align: center;
+}
+
+.opponent {
+    min-width: 26.5%;
+    float: left;
+    color: red;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: 'Consolas', monospace;
+    border: 3px solid black;
+    padding: 0 15px;
+    text-align: center;
+}
+
+.wrapper {
+    font-size: 150px;
+    color: white;
+}
+.blue {
+    color: blue;
+}
+
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
+}
+
+.result_block {
+    text-align: center;
+    font-size: 100px;
+    color: white;
+}
+
+.result_show {
+    position: relative;
+    bottom: 50%;
+}
+
+.return_button {
+    display: none;
+}
+
+.return_show {
+    display: block;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>TicTacToe</title>
+    <link rel="stylesheet" type="text/css" th:href="@{css/tic_tac_toe_styles.css}">
+    <script type="text/javascript" th:src="@{js/sockjs.js}"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+    <script type="text/javascript" th:src="@{js/start.js}"></script>
+</head>
+<body>
+<a href="/my_room" class="return_button" id="button">Back</a>
+<main>
+    <div class="container">
+        <span class="opponent" id="opponent_id">null</span>
+        <div class="wrapper">
+            <table>
+                <tbody>
+                <tr>
+                    <td id="first_cell">E</td>
+                    <td id="second_cell">E</td>
+                    <td id="third_cell">E</td>
+                </tr>
+                <tr>
+                    <td id="forth_cell">E</td>
+                    <td id="fifth_cell">E</td>
+                    <td id="sixth_cell">E</td>
+                </tr>
+                <tr>
+                    <td id="seventh_cell">E</td>
+                    <td id="eight_cell">E</td>
+                    <td id="ninth_cell">E</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <span class="username" th:text="${username}" id="user_id"></span> <br>
+        <div class="result_block" id="block_id">
+            <p class="status" id="result_id">Text</p>
+        </div>
+    </div>
+</main>
+</body>
+</html>
